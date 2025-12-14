@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaSeek | Home</title>
+  <link rel="icon" href="assets/logo.ico" sizes="any">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-wrap">
+  <div class="container">
+    <header class="nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="AlphaSeek logo">
+        <div class="title">
+          <strong>AlphaSeek</strong>
+          <span>OCR Word Search Solver</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="screenshots.html">Screenshots</a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<main class="container">
+  <section class="hero">
+    <div class="kicker">EPITA S3 • C • OCR • Neural Network</div>
+    <h1>From image to solved grid.</h1>
+    <p>
+      AlphaSeek detects a word-search grid, recognizes letters using a neural network,
+      reconstructs the puzzle and highlights the found words.
+    </p>
+  </section>
+
+  <section class="grid">
+    <article class="card span-6">
+      <h2>Processing Chain</h2>
+      <p>Preprocessing → Grid detection → Segmentation → OCR → Reconstruction → Solver → Export.</p>
+    </article>
+
+    <article class="card span-6">
+      <h2>Neural Network</h2>
+      <p>MLP trained on extracted letters, with saved weights for fast inference in one run.</p>
+    </article>
+
+    <article class="card span-4">
+      <h2>Fast demo</h2>
+      <p>One command: load image, run detection, OCR, rebuild, solve, render output.</p>
+    </article>
+
+    <article class="card span-4">
+      <h2>Robustness</h2>
+      <p>Designed to handle rotation, contrast issues, noise (depending on level).</p>
+    </article>
+
+    <article class="card span-4">
+      <h2>Output</h2>
+      <p>Final solved grid + highlighted words, exportable as an image.</p>
+    </article>
+  </section>
+
+  <div class="footer">© AlphaSeek — EPITA S3 project</div>
+</main>
+
+</body>
+</html>
